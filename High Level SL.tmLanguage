@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>hlsl</string>
+	</array>
+	<key>name</key>
+	<string>High Level SL</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Basic control keywords</string>
+			<key>match</key>
+			<string>\b(break|continue|discard|do|for|if|return|switch|while)\b</string>
+			<key>name</key>
+			<string>keyword.control.hlsl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Basic types</string>
+			<key>match</key>
+			<string>\b(bool|double|float|int|struct|void)\b</string>
+			<key>name</key>
+			<string>storage.type.hlsl</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.hlsl</string>
+	<key>uuid</key>
+	<string>79f67826-5bc3-4067-a1d5-46e7ffe52919</string>
+</dict>
+</plist>
