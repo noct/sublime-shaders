@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>glsl</string>
+	</array>
+	<key>name</key>
+	<string>OpenGL SL</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Basic control keywords</string>
+			<key>match</key>
+			<string>\b(break|case|continue|default|do|else|for|if|return|switch|while)\b</string>
+			<key>name</key>
+			<string>keyword.control.glsl</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.glsl</string>
+	<key>uuid</key>
+	<string>18a341e4-25c1-4246-a5ee-a248e33effc4</string>
+</dict>
+</plist>
