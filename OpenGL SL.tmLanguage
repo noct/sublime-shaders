@@ -18,6 +18,14 @@
 			<key>name</key>
 			<string>keyword.control.glsl</string>
 		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Basic types</string>
+			<key>match</key>
+			<string>\b(bool|double|float|int|void)\b</string>
+			<key>name</key>
+			<string>storage.type.glsl</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.glsl</string>
