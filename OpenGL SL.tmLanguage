@@ -22,7 +22,7 @@
 			<key>comment</key>
 			<string>Basic types</string>
 			<key>match</key>
-			<string>\b(bool|double|float|int|void)\b</string>
+			<string>\b(bool|double|float|int|uint|void)\b</string>
 			<key>name</key>
 			<string>storage.type.glsl</string>
 		</dict>
