@@ -62,9 +62,25 @@
 			<key>comment</key>
 			<string>Sampler type</string>
 			<key>match</key>
-			<string>\b(sampler)\b</string>
+			<string>\b(sampler|sampler1D|sampler2D|sampler3D|SamplerComparisonState|samplerCUBE|sampler_state|SamplerState)\b</string>
 			<key>name</key>
 			<string>storage.type.sampler.hlsl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Direct3D 9 Texture keyword</string>
+			<key>match</key>
+			<string>\b(Texture)\b</string>
+			<key>name</key>
+			<string>keyword.sampler.texture.hlsl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Sampler state members</string>
+			<key>match</key>
+			<string>\b(AddressU|AddressV|AddressW|BorderColor|Filter|MaxAnisotropy|MaxLOD|MinLOD|MipLODBias)\b</string>
+			<key>name</key>
+			<string>variable.other.sampler.state.hlsl</string>
 		</dict>
 		<dict>
 			<key>comment</key>
