@@ -76,7 +76,7 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Sampler type</string>
+			<string>Sampler types</string>
 			<key>match</key>
 			<string>\b(sampler|sampler1D|sampler2D|sampler3D|SamplerComparisonState|samplerCUBE|sampler_state|SamplerState)\b</string>
 			<key>name</key>
