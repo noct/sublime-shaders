@@ -30,7 +30,7 @@
 			<key>comment</key>
 			<string>Language constants</string>
 			<key>match</key>
-			<string>\b(NULL)\b</string>
+			<string>\b(false|FALSE|NULL|true|TRUE)\b</string>
 			<key>name</key>
 			<string>constant.language.hlsl</string>
 		</dict>
