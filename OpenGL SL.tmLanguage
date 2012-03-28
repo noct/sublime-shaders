@@ -16,7 +16,7 @@
 			<key>end</key>
 			<string>$</string>
 			<key>name</key>
-			<string>comment.line.glsl</string>
+			<string>comment.line.double-slash.glsl</string>
 		</dict>
 		<dict>
 			<key>comment</key>

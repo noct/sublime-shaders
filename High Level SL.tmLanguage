@@ -16,7 +16,7 @@
 			<key>end</key>
 			<string>$</string>
 			<key>name</key>
-			<string>comment.line.hlsl</string>
+			<string>comment.line.double-slash.hlsl</string>
 		</dict>
 		<dict>
 			<key>comment</key>
