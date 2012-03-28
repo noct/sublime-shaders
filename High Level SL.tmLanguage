@@ -20,6 +20,14 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>Numeric constants</string>
+			<key>match</key>
+			<string>\b([0-9]+\.?[0-9]*)|(\.[0-9]+)\b</string>
+			<key>name</key>
+			<string>constant.numeric.hlsl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Basic control keywords</string>
 			<key>match</key>
 			<string>\b(break|continue|discard|do|for|if|return|switch|while)\b</string>
