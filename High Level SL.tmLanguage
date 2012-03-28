@@ -22,9 +22,17 @@
 			<key>comment</key>
 			<string>Basic types</string>
 			<key>match</key>
-			<string>\b(bool|double|float|int|struct|void)\b</string>
+			<string>\b(bool|double|dword|float|half|int|min10float|min16float|min12int|min16int|min16uint|struct|uint|void)\b</string>
 			<key>name</key>
-			<string>storage.type.hlsl</string>
+			<string>storage.type.scalar.hlsl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Float type modifier</string>
+			<key>match</key>
+			<string>\b(snorm|unorm)\b</string>
+			<key>name</key>
+			<string>storage.type.float.modifier.hlsl</string>
 		</dict>
 		<dict>
 			<key>comment</key>
