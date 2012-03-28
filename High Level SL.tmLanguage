@@ -28,6 +28,14 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>Language constants</string>
+			<key>match</key>
+			<string>\b(NULL)\b</string>
+			<key>name</key>
+			<string>constant.language.hlsl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Basic control keywords</string>
 			<key>match</key>
 			<string>\b(break|continue|discard|do|for|if|return|switch|while)\b</string>
