@@ -32,7 +32,29 @@
 			<key>match</key>
 			<string>\b(vec2|vec3|vec4|ivec2|ivec3|ivec4|bvec2|bvec3|bvec4|dvec2|dvec3|dvec4)\b</string>
 			<key>name</key>
-			<string>storage.type.glsl</string>
+			<string>storage.type.vector.glsl</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>/\*</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.block.glsl</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\*/</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>comment.block.glsl</string>
+				</dict>
+			</dict>
 		</dict>
 	</array>
 	<key>scopeName</key>
