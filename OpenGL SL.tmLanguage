@@ -11,6 +11,14 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>begin</key>
+			<string>//</string>
+			<key>end</key>
+			<string>$</string>
+			<key>name</key>
+			<string>comment.line.glsl</string>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>Basic control keywords</string>
 			<key>match</key>
