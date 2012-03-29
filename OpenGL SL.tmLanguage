@@ -83,6 +83,14 @@
 			<string>storage.type.integer.signed.opaque.glsl</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>Unsigned integer opaque types</string>
+			<key>match</key>
+			<string>\b(atomic_uint|uimage1D|uimage1DArray|uimage2D|uimage2DArray|uimage2DMS|uimage2DMSArray|uimage2DRect|uimage3D|uimageBuffer|uimageCube|uimageCubeArray|usampler1D|usampler1DArray|usampler2D|usampler2DArray|usampler2DMS|usampler2DMSArray|usampler2DRect|usampler3D|usamplerBuffer|usamplerCube|usamplerCubeArray)\b</string>
+			<key>name</key>
+			<string>storage.type.integer.unsigned.opaque.glsl</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>/\*</string>
 			<key>beginCaptures</key>
