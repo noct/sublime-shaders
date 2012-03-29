@@ -91,6 +91,22 @@
 			<string>storage.type.integer.unsigned.opaque.glsl</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>Storage qualifiers</string>
+			<key>match</key>
+			<string>\b(attribute|const|in|out|uniform|varying)\b</string>
+			<key>name</key>
+			<string>storage.modifier.glsl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Auxiliary storage qualifiers</string>
+			<key>match</key>
+			<string>\b(centroid|patch|sample)\b</string>
+			<key>name</key>
+			<string>storage.modifier.auxiliary.glsl</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>/\*</string>
 			<key>beginCaptures</key>
