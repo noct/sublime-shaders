@@ -67,6 +67,14 @@
 			<string>storage.type.matrix.glsl</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>Floating point opaque types</string>
+			<key>match</key>
+			<string>\b(image1D|image1DArray|image2D|image2DArray|image2DMS|image2DMSArray|image2DRect|image3D|imageBuffer|imageCube|imageCubeArray|sampler1D|sampler1DArray|sampler1DArrayShadow|sampler1DShadow|sampler2D|sampler2DArray|sampler2DMS|sampler2DMSArray|sampler2DArrayShadow|sampler2DRect|sampler2DRectShadow|sampler2DShadow|sampler3D|samplerBuffer|samplerCube|samplerCubeArray|samplerCubeArrayShadow|samplerCubeShadow)\b</string>
+			<key>name</key>
+			<string>storage.type.float.opaque.glsl</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>/\*</string>
 			<key>beginCaptures</key>
