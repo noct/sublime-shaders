@@ -28,6 +28,14 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>Language constants</string>
+			<key>match</key>
+			<string>\b(false|true)\b</string>
+			<key>name</key>
+			<string>constant.language.glsl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Basic control keywords</string>
 			<key>match</key>
 			<string>\b(break|case|continue|default|do|else|for|if|return|switch|while)\b</string>
