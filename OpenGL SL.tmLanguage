@@ -110,7 +110,7 @@
 			<key>comment</key>
 			<string>Reserved keywords</string>
 			<key>match</key>
-			<string>\b(__.*|active|asm|cast|class|common|enum|extern|external|filter|fixed|fvec2|fvec3|fvec4|goto|half|hvec2|hvec3|hvec4|inline|input|interface|long|namespace|noinline|output|packed|partition|public|resource|row_major|sampler3DRect|short|sizeof|static|superp|template|this|typedef|union|unsigned|using)\b</string>
+			<string>\b(active|asm|cast|class|common|enum|extern|external|filter|fixed|fvec2|fvec3|fvec4|goto|half|hvec2|hvec3|hvec4|inline|input|interface|long|namespace|noinline|output|packed|partition|public|resource|row_major|sampler3DRect|short|sizeof|static|superp|template|this|typedef|union|unsigned|using)\b</string>
 			<key>name</key>
 			<string>invalid.illegal.reserved.keyword</string>
 		</dict>
