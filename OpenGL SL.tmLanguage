@@ -108,11 +108,19 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string></string>
+			<string>Interpolation qualifiers</string>
 			<key>match</key>
 			<string>\b(flat|noperspective|smooth)\b</string>
 			<key>name</key>
 			<string>storage.modifier.interpolation.glsl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Parameter qualifiers</string>
+			<key>match</key>
+			<string>\b(const|in|inout|out)\b</string>
+			<key>name</key>
+			<string>storage.modifier.parameter.glsl</string>
 		</dict>
 		<dict>
 			<key>comment</key>
