@@ -75,6 +75,14 @@
 			<string>storage.type.float.opaque.glsl</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>Signed integer opaque types</string>
+			<key>match</key>
+			<string>\b(iimage1D|iimage1DArray|iimage2D|iimage2DArray|iimage2DMS|iimage2DMSArray|iimage2DRect|iimage3D|iimageBuffer|iimageCube|iimageCubeArray|isampler1D|isampler1DArray|isampler2D|isampler2DArray|isampler2DMS|isampler2DMSArray|isampler2DRect|isampler3D|isamplerBuffer|isamplerCube|isamplerCubeArray)\b</string>
+			<key>name</key>
+			<string>storage.type.integer.signed.opaque.glsl</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>/\*</string>
 			<key>beginCaptures</key>
