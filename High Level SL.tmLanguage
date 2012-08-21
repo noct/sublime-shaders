@@ -36,6 +36,14 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>Preprocessor directives</string>
+			<key>match</key>
+			<string>^\s*#\s*(define|elif|else|endif|error|if|ifdef|ifndef|include|line|pragma|undef)\b</string>
+			<key>name</key>
+			<string>keyword.control.hlsl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Basic control keywords</string>
 			<key>match</key>
 			<string>\b(break|continue|discard|do|for|if|return|switch|while)\b</string>
