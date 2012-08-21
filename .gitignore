@@ -1,0 +1,3 @@
+*.tmLanguage.cache
+package-metadata.json
+.hg_archival.txt
