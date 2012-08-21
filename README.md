@@ -34,5 +34,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   [1]: http://www.sublimetext.com/
   [2]: http://en.wikipedia.org/wiki/High_Level_Shader_Language
   [3]: http://en.wikipedia.org/wiki/GLSL
-  [4]: http://wbond.net/sublime_packages/package_control
-  [5]: https://bitbucket.org/asmodai/shaderlanguages
+  [4]: https://bitbucket.org/asmodai/shaderlanguages
+  [5]: http://wbond.net/sublime_packages/package_control
+
