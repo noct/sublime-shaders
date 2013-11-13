@@ -1,18 +1,21 @@
 #About
 
-SublimeSL is a [Sublime Text 2][1] syntax highlighting package for the [High Level][2] and
-[OpenGL Shader Language][3]s, based on [ShaderLanguages][4]
+sublime-shaders is a [Sublime Text 2 & 3][1] syntax highlighting package for
+[HLSL][2], [OpenGL's GLSL][3], and [Cg][4], based on [ShaderLanguages][5].
 
 ##Installation
 
-This package has been submitted to the [Package Control][5] index and will hopefully soon be available in the main list. You can then install it via the Command Palette (CTRL + Shift + P),
-typing `install`, selecting `Package Control: Install Package`, and typing `SublimeSL`.
+###Package Control
+Install it via the Command Palette (CTRL + Shift + P),
+typing `install`, selecting `Package Control: Install Package`, and typing `Shader Languages`.
 
-Alternatively, clone this git repository into your `Packages` directory.
+### Git
+Clone this git repository into your `Packages` directory.
+* Windows: `%APPDATA%/Sublime Text #/Packages/`
 
 #License
 
-SublimeSL is released under the MIT license.
+sublime-shaders is released under the MIT license.
 
 Copyright (c) 2012 Jeroen Ruigrok van der Werven, Jason Kozak
 
@@ -34,6 +37,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   [1]: http://www.sublimetext.com/
   [2]: http://en.wikipedia.org/wiki/High_Level_Shader_Language
   [3]: http://en.wikipedia.org/wiki/GLSL
-  [4]: https://bitbucket.org/asmodai/shaderlanguages
-  [5]: http://wbond.net/sublime_packages/package_control
+  [4]: http://en.wikipedia.org/wiki/Cg_(programming_language)
+  [5]: https://bitbucket.org/asmodai/shaderlanguages
+  [6]: http://wbond.net/sublime_packages/package_control
 
