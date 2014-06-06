@@ -5,6 +5,8 @@
 	<key>fileTypes</key>
 	<array>
 		<string>glsl</string>
+		<string>frag</string>
+		<string>vert</string>
 	</array>
 	<key>name</key>
 	<string>OpenGL SL</string>
