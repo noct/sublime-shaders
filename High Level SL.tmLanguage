@@ -19,6 +19,28 @@
 			<string>comment.line.double-slash.hlsl</string>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>/\*</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.hlsl</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\*/</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>comment.block.hlsl</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>Numeric constants</string>
 			<key>match</key>

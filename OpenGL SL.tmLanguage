@@ -21,6 +21,28 @@
 			<string>comment.line.double-slash.glsl</string>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>/\*</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.glsl</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\*/</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>comment.block.glsl</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>Numeric constants</string>
 			<key>match</key>
@@ -155,28 +177,6 @@
 			<string>\b(active|asm|cast|class|common|enum|extern|external|filter|fixed|fvec2|fvec3|fvec4|goto|half|hvec2|hvec3|hvec4|inline|input|interface|long|namespace|noinline|output|packed|partition|public|resource|row_major|sampler3DRect|short|sizeof|static|superp|template|this|typedef|union|unsigned|using)\b</string>
 			<key>name</key>
 			<string>invalid.illegal.reserved.keyword</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>/\*</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.block.glsl</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>\*/</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>comment.block.glsl</string>
-				</dict>
-			</dict>
 		</dict>
 	</array>
 	<key>scopeName</key>
