@@ -1,0 +1,75 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: OpenGL SL
+file_extensions:
+  - glsl
+  - frag
+  - vert
+scope: source.glsl
+contexts:
+  main:
+    - match: //
+      push:
+        - meta_scope: comment.line.double-slash.glsl
+        - match: $
+          pop: true
+    - match: /\*
+      captures:
+        0: punctuation.definition.comment.glsl
+      push:
+        - match: \*/
+          captures:
+            0: comment.block.glsl
+          pop: true
+    - match: '\b(((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)(F|f|lf|LF)?)\b'
+      comment: Numeric constants
+      scope: constant.numeric.glsl
+    - match: \b(false|true)\b
+      comment: Language constants
+      scope: constant.language.glsl
+    - match: ^\s*#\s*(define|undef|if|ifdef|ifndef|else|elif|endif|error|pragma|extension|version|line)\b
+      comment: Preprocessor directives
+      scope: keyword.control.glsl
+    - match: \b(break|case|continue|default|do|else|for|if|return|switch|while)\b
+      comment: Basic control keywords
+      scope: keyword.control.glsl
+    - match: \b(bool|double|float|int|uint|void)\b
+      comment: Basic types
+      scope: storage.type.glsl
+    - match: \b(bvec2|bvec3|bvec4|dvec2|dvec3|dvec4|ivec2|ivec3|ivec4|uvec2|uvec3|uvec4|vec2|vec3|vec4)\b
+      comment: Vector types
+      scope: storage.type.vector.glsl
+    - match: \b(dmat2|dmat2x2|dmat2x3|dmat2x4|dmat3|dmat3x2|dmat3x3|dmat3x4|dmat4|dmat4x2|dmat4x3|dmat4x4|mat2|mat2x2|mat2x3|mat2x4|mat3|mat3x2|mat3x3|mat3x4|mat4|mat4x2|mat4x3|mat4x4)\b
+      comment: Matrix types
+      scope: storage.type.matrix.glsl
+    - match: \b(image1D|image1DArray|image2D|image2DArray|image2DMS|image2DMSArray|image2DRect|image3D|imageBuffer|imageCube|imageCubeArray|sampler1D|sampler1DArray|sampler1DArrayShadow|sampler1DShadow|sampler2D|sampler2DArray|sampler2DMS|sampler2DMSArray|sampler2DArrayShadow|sampler2DRect|sampler2DRectShadow|sampler2DShadow|sampler3D|samplerBuffer|samplerCube|samplerCubeArray|samplerCubeArrayShadow|samplerCubeShadow)\b
+      comment: Floating point opaque types
+      scope: storage.type.float.opaque.glsl
+    - match: \b(iimage1D|iimage1DArray|iimage2D|iimage2DArray|iimage2DMS|iimage2DMSArray|iimage2DRect|iimage3D|iimageBuffer|iimageCube|iimageCubeArray|isampler1D|isampler1DArray|isampler2D|isampler2DArray|isampler2DMS|isampler2DMSArray|isampler2DRect|isampler3D|isamplerBuffer|isamplerCube|isamplerCubeArray)\b
+      comment: Signed integer opaque types
+      scope: storage.type.integer.signed.opaque.glsl
+    - match: \b(atomic_uint|uimage1D|uimage1DArray|uimage2D|uimage2DArray|uimage2DMS|uimage2DMSArray|uimage2DRect|uimage3D|uimageBuffer|uimageCube|uimageCubeArray|usampler1D|usampler1DArray|usampler2D|usampler2DArray|usampler2DMS|usampler2DMSArray|usampler2DRect|usampler3D|usamplerBuffer|usamplerCube|usamplerCubeArray)\b
+      comment: Unsigned integer opaque types
+      scope: storage.type.integer.unsigned.opaque.glsl
+    - match: \b(attribute|const|in|out|uniform|varying)\b
+      comment: Storage qualifiers
+      scope: storage.modifier.glsl
+    - match: \b(centroid|patch|sample)\b
+      comment: Auxiliary storage qualifiers
+      scope: storage.modifier.auxiliary.glsl
+    - match: \b(flat|noperspective|smooth)\b
+      comment: Interpolation qualifiers
+      scope: storage.modifier.interpolation.glsl
+    - match: \b(const|in|inout|out)\b
+      comment: Parameter qualifiers
+      scope: storage.modifier.parameter.glsl
+    - match: \b(highp|lowp|mediump|precision)\b
+      comment: Precision qualifiers
+      scope: storage.modifier.precision.glsl
+    - match: \b(coherent|volatile|restrict|readonly|writeonly)\b
+      comment: Memory qualifiers
+      scope: storage.modifier.memory.glsl
+    - match: \b(active|asm|cast|class|common|enum|extern|external|filter|fixed|fvec2|fvec3|fvec4|goto|half|hvec2|hvec3|hvec4|inline|input|interface|long|namespace|noinline|output|packed|partition|public|resource|row_major|sampler3DRect|short|sizeof|static|superp|template|this|typedef|union|unsigned|using)\b
+      comment: Reserved keywords
+      scope: invalid.illegal.reserved.keyword

@@ -1,0 +1,64 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: High Level SL
+file_extensions:
+  - hlsl
+scope: source.hlsl
+contexts:
+  main:
+    - match: //
+      push:
+        - meta_scope: comment.line.double-slash.hlsl
+        - match: $
+          pop: true
+    - match: /\*
+      captures:
+        0: punctuation.definition.comment.hlsl
+      push:
+        - match: \*/
+          captures:
+            0: comment.block.hlsl
+          pop: true
+    - match: '\b([0-9]+\.?[0-9]*)|(\.[0-9]+)\b'
+      comment: Numeric constants
+      scope: constant.numeric.hlsl
+    - match: \b(false|FALSE|NULL|true|TRUE)\b
+      comment: Language constants
+      scope: constant.language.hlsl
+    - match: ^\s*#\s*(define|elif|else|endif|error|if|ifdef|ifndef|include|line|pragma|undef)\b
+      comment: Preprocessor directives
+      scope: keyword.control.hlsl
+    - match: \b(break|continue|discard|do|for|if|return|switch|while)\b
+      comment: Basic control keywords
+      scope: keyword.control.hlsl
+    - match: \b(bool|double|dword|float|half|int|min10float|min16float|min12int|min16int|min16uint|struct|uint|void)\b
+      comment: Basic types
+      scope: storage.type.scalar.hlsl
+    - match: \b(double1|double2|double3|double4|float1|float2|float3|float4|half1|half2|half3|half4|int1|int2|int3|int4|uint1|uint2|uint3|uint4)\b
+      comment: Vector forms of scalar types
+      scope: storage.type.vector.hlsl
+    - match: \b(double1x1|double1x2|double1x3|double1x4|double2x1|double2x2|double2x3|double2x4|double3x1|double3x2|double3x3|double3x4|double4x1|double4x2|double4x3|double4x4|float1x1|float1x2|float1x3|float1x4|float2x1|float2x2|float2x3|float2x4|float3x1|float3x2|float3x3|float3x4|float4x1|float4x2|float4x3|float4x4|half1x1|half1x2|half1x3|half1x4|half2x1|half2x2|half2x3|half2x4|half3x1|half3x2|half3x3|half3x4|half4x1|half4x2|half4x3|half4x4|int1x1|int1x2|int1x3|int1x4|int2x1|int2x2|int2x3|int2x4|int3x1|int3x2|int3x3|int3x4|int4x1|int4x2|int4x3|int4x4|uint1x1|uint1x2|uint1x3|uint1x4|uint2x1|uint2x2|uint2x3|uint2x4|uint3x1|uint3x2|uint3x3|uint3x4|uint4x1|uint4x2|uint4x3|uint4x4)\b
+      comment: Matrix forms of scalar types
+      scope: storage.type.matrix.hlsl
+    - match: \b(snorm|unorm)\b
+      comment: Float type modifier
+      scope: storage.type.float.modifier.hlsl
+    - match: \b(sampler|sampler1D|sampler2D|sampler3D|SamplerComparisonState|samplerCUBE|sampler_state|SamplerState)\b
+      comment: Sampler types
+      scope: storage.type.sampler.hlsl
+    - match: \b(Texture)\b
+      comment: Direct3D 9 Texture keyword
+      scope: keyword.sampler.texture.hlsl
+    - match: \b(AddressU|AddressV|AddressW|BorderColor|Filter|MaxAnisotropy|MaxLOD|MinLOD|MipLODBias)\b
+      comment: Sampler state members
+      scope: variable.other.sampler.state.hlsl
+    - match: \b(ComparisonFunc|ComparisonFilter)\b
+      comment: Sampler comparison state members
+      scope: variable.other.sampler-comparison.state.hlsl
+    - match: \b(texture|Texture1D|Texture1DArray|Texture2D|Texture2DArray|Texture3D|TextureCube)\b
+      comment: Texture types
+      scope: storage.type.texture.hlsl
+    - match: \b(abort|abs|acos|all|AllMemoryBarrier|AllMemoryBarrierWithGroupSync|any|asdouble|asfloat|asin|asint|asuint|atan|atan2|ceil|clamp|clip|cos|cosh|countbits|cross|D3DCOLORtoUBYTE4|ddx|ddx_coarse|ddx_fine|ddy|ddy_coarse|ddy_fine|degrees|determinant|DeviceMemoryBarrier|DeviceMemoryBarrierWithGroupSync|distance|dot|dst|errorf|EvaluateAttributeAtCentroid|EvaluateAttributeAtSample|EvaluateAttributeSnapped|exp|exp2|f16tof32|f32tof16|faceforward|firstbithigh|firstbitlow|floor|fma|fmod|frac|frexp|fwidth|GetRenderTargetSampleCount|GetRenderTargetSamplePosition|GroupMemoryBarrier|GroupMemoryBarrierWithGroupSync|InterlockedAdd|InterlockedAnd|InterlockedCompareExchange|InterlockedCompareStore|InterlockedExchange|InterlockedMax|InterlockedMin|InterlockedOr|InterlockedXor|isfinite|isinf|isnan|ldexp|length|lerp|lit|log|log10|log2|mad|max|min|modf|msad4|mul|noise|normalize|pow|printf|Process2DQuadTessFactorsAvg|Process2DQuadTessFactorsMax|Process2DQuadTessFactorsMin|ProcessIsolineTessFactors|ProcessQuadTessFactorsAvg|ProcessQuadTessFactorsMax|ProcessQuadTessFactorsMin|ProcessTriTessFactorsAvg|ProcessTriTessFactorsMax|ProcessTriTessFactorsMin|radians|rcp|reflect|refract|reversebits|round|rsqrt|saturate|sign|sin|sincos|sinh|smoothstep|sqrt|step|tan|tanh|tex1D|tex1Dbias|tex1Dgrad|tex1Dlod|tex1Dproj|tex2D|tex2Dbias|tex2Dgrad|tex2Dlod|tex2Dproj|tex3D|tex3Dbias|tex3Dgrad|tex3Dlod|tex3Dproj|texCUBE|texCUBEbias|texCUBEgrad|texCUBElod|texCUBEproj|transpose|trunc)\b
+      comment: Intrinsic functions
+      scope: keyword.function.intrinsic.hlsl
