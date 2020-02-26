@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Comments</string>
 	<key>scope</key>
-	<string>source.glsl, source.hlsl, source.cg</string>
+	<string>source.glsl, source.hlsl</string>
 	<key>settings</key>
 	<dict>
 		<key>shellVariables</key>

@@ -1,7 +1,6 @@
 #About
 
-sublime-shaders is a [Sublime Text 2 & 3][1] syntax highlighting package for
-[HLSL][2], [OpenGL's GLSL][3], and [Cg][4], based on [ShaderLanguages][5].
+sublime-shaders is a [Sublime Text 3][1] syntax highlighting package for [HLSL][2], [OpenGL's GLSL][3], based on [ShaderLanguages][4].
 
 ##Installation
 
@@ -37,7 +36,5 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   [1]: http://www.sublimetext.com/
   [2]: http://en.wikipedia.org/wiki/High_Level_Shader_Language
   [3]: http://en.wikipedia.org/wiki/GLSL
-  [4]: http://en.wikipedia.org/wiki/Cg_(programming_language)
-  [5]: https://bitbucket.org/asmodai/shaderlanguages
-  [6]: http://wbond.net/sublime_packages/package_control
+  [4]: https://bitbucket.org/asmodai/shaderlanguages
 
